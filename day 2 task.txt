@@ -1,0 +1,65 @@
+1.write a blog on the difference between document and window object
+
+
+ JavaScript plays a pivotal role in manipulating and controlling the behavior of web pages. When delving into the intricacies of JavaScript,
+ developers often encounter two fundamental objects: the document and window objects.While they are both crucial components in web development,
+ understanding their differences is essential for leveraging their functionalities effectively.
+
+The Window Object :
+
+The window object represents the browser window or tab that contains the web page.
+ It serves as the global object in client-side JavaScript and provides access to various browser functionalities and properties.
+
+Key Features of the Window Object:
+
+1.Global Scope: All JavaScript code running in a browser operates within the context of the window object.
+ Variables and functions declared without the var, let, or const keywords become properties of the window object by default.
+
+2.Browser Interaction: The window object allows interaction with the browser, enabling actions such as opening or closing tabs, controlling navigation history, and setting timeouts or intervals.
+
+3.Access to Frames and IFrames: It facilitates access to frames and iframes within the browser window through properties like window.frames or window.parent.
+
+4.Dimensions and Position: Properties like window.innerWidth, window.innerHeight, window.pageXOffset, and window.
+pageYOffset provide information about the browser's dimensions and scroll positions.
+
+ Window object −
+
+  Top of the hierarchy.
+  It is the outmost element of the object hierarchy
+  examples-
+  window.open() - open a new window
+  window.close() - close the current window
+  window.moveTo() - move the current window
+  window.resizeTo() - resize the current window
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The Document Object:
+
+On the other hand, the document object is a part of the window object and represents the HTML content of the web page. It provides access to the DOM (Document Object Model) elements,
+allowing manipulation and modification of the page's structure and content.
+
+
+Key Features of the Document Object:
+
+1.DOM Manipulation: The document object allows developers to access and modify elements on the web page.
+ It provides methods like getElementById(), getElementsByClassName(), and querySelector() to interact with specific elements.
+
+2.Content Modification: Developers can dynamically alter the content, attributes, and styles of HTML elements using the document object.
+ Elements can be created, removed, or updated using functions like createElement(), appendChild(), and setAttribute().
+
+3.Event Handling: It enables the attachment of event listeners to various DOM elements, allowing JavaScript code to respond to user interactions or specific events triggered on the web page.
+
+4.Forms and Input Handling: The document object facilitates access to form elements and their values, enabling validation, submission, or manipulation of form data.
+
+Document object − 
+
+  Each HTML document that gets loaded into a window becomes a document object. 
+  The document contains the contents of the page.
+  Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page. 
+  Using document object, JavaScript can modify, add and delete the HTML elements, attributes CSS styles in the page
+  examples-
+  document.createElement(element)	Create an HTML element
+  document.removeChild(element)	Remove an HTML element
+  document.appendChild(element)	Add an HTML element
+  document.replaceChild(new, old)	Replace an HTML element
+  document.write(text)	Write into the HTML output stream
